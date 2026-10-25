@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f36">
+  <meta name="description" content="عرضك واضح: أمثلة عربية مكتملة وقوالب قابلة للتعديل تساعد كتّاب المحتوى ومستقلي التسويق على توضيح الخدمة والمخرجات ومدخلات العميل وحدود العمل.">
+  <title>عرضك واضح | عروض خدمات عربية تبدأ من مثال مكتمل</title>
+  <style>
+    :root{--paper:#f8f7f2;--white:#fff;--ink:#18362f;--muted:#5d6b65;--green:#153f36;--lime:#e1efab;--line:#dce3da;--soft:#edf1e9;--radius:24px;--shadow:0 18px 48px rgba(21,63,54,.07)}
+    *{box-sizing:border-box}
+    html{color-scheme:light}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+    h1,h2,h3,p{margin:0}
+    h1,h2,h3{line-height:1.45}
+    a{color:var(--green);text-underline-offset:5px}
+    a:focus-visible,summary:focus-visible{outline:3px solid #759b29;outline-offset:6px;border-radius:5px}
+    .container{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+    .topbar{padding:23px 0;border-bottom:1px solid var(--line)}
+    .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:11px;font-size:19px;font-weight:700}
+    .brand-icon{display:grid;place-items:center;width:39px;height:39px;background:var(--green);color:var(--lime);border-radius:12px;font-size:23px}
+    .top-note{font-size:12px;color:var(--muted)}
+    .hero{padding:52px 0 44px}
+    .hero-grid{display:grid;gap:35px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:13px;font-weight:700;margin-bottom:20px}
+    .status-dot{width:8px;height:8px;background:#5d7e2c;border-radius:50%}
+    h1{font-size:clamp(32px,5.1vw,57px);letter-spacing:-1.2px;font-weight:800;max-width:720px}
+    .highlight{color:#527129}
+    .hero-copy{font-size:17px;color:var(--muted);margin-top:22px;max-width:620px}
+    .buy-note{display:flex;align-items:flex-start;gap:12px;margin-top:27px;padding:17px 20px;background:var(--green);color:white;border-radius:15px;font-weight:700;font-size:15px}
+    .buy-note .arrow{color:var(--lime);font-size:22px;line-height:1.4}
+    .micro{font-size:12px;color:var(--muted);margin-top:12px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}
+    .tag{font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:30px;background:rgba(255,255,255,.6)}
+    .preview-wrap{padding:16px;background:var(--soft);border-radius:30px;position:relative}
+    .preview{background:var(--white);border:1px solid var(--line);border-radius:19px;padding:24px;box-shadow:var(--shadow)}
+    .preview-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:17px;border-bottom:1px solid var(--line);font-size:11px;color:var(--muted)}
+    .sample-label{background:var(--soft);color:var(--green);padding:3px 9px;border-radius:20px;white-space:nowrap}
+    .preview h2{font-size:21px;margin:19px 0 7px}
+    .preview-intro{font-size:13px;color:var(--muted)}
+    .sample-row{padding:13px 0;border-bottom:1px dashed var(--line)}
+    .sample-row:last-of-type{border-bottom:0}
+    .sample-row strong{display:block;font-size:12px;color:#537448;margin-bottom:3px}
+    .sample-row p{font-size:13px}
+    .preview-foot{font-size:11px;color:var(--muted);padding-top:13px;margin-top:7px;border-top:1px solid var(--line)}
+    .section{padding:48px 0}
+    .section-head{max-width:720px;margin-bottom:27px}
+    .kicker{display:block;color:#57743b;font-size:12px;letter-spacing:.5px;font-weight:700;margin-bottom:10px}
+    h2{font-size:clamp(25px,3.4vw,36px);letter-spacing:-.6px}
+    .section-intro{color:var(--muted);margin-top:13px}
+    .grid-three{display:grid;gap:16px}
+    .problem-card{border-top:2px solid var(--line);padding:22px 0}
+    .number{display:block;font-size:12px;font-weight:700;color:#607c46;margin-bottom:12px}
+    h3{font-size:19px}
+    .problem-card p,.feature p{font-size:14px;color:var(--muted);margin-top:9px}
+    .solution{background:var(--green);color:white;border-radius:var(--radius);padding:30px 24px;display:grid;gap:29px}
+    .solution .kicker{color:var(--lime)}
+    .solution p{color:#d2ded8;margin-top:15px;font-size:15px}
+    .steps{display:grid;gap:19px;list-style:none;padding:0;margin:0}
+    .steps li{display:flex;align-items:flex-start;gap:13px}
+    .step-index{flex-shrink:0;display:grid;place-items:center;width:32px;height:32px;border:1px solid #648075;border-radius:10px;color:var(--lime);font-size:13px}
+    .steps strong{font-size:15px}
+    .steps p{margin-top:3px;font-size:13px}
+    .features{display:grid;gap:15px}
+    .feature{padding:24px;border:1px solid var(--line);background:var(--white);border-radius:18px}
+    .feature-symbol{display:grid;place-items:center;width:36px;height:36px;background:var(--soft);border-radius:11px;margin-bottom:17px;font-size:19px;color:#557338}
+    .feature h3{font-size:17px}
+    .boundary{margin-top:19px;padding:17px 20px;border-inline-start:3px solid #819653;background:var(--soft);border-radius:8px;font-size:13px;color:var(--muted)}
+    .packages{padding-top:54px}
+    .pricing-grid{display:grid;gap:18px;align-items:stretch}
+    .tier{display:flex;flex-direction:column;min-width:0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:25px;position:relative}
+    .tier.featured{border:2px solid var(--green);padding:24px;box-shadow:var(--shadow)}
+    .tier-label{font-size:11px;color:#526c40;background:var(--soft);padding:4px 10px;border-radius:20px;align-self:flex-start;margin-bottom:17px}
+    .featured .tier-label{background:var(--green);color:var(--lime)}
+    .tier h3{font-size:22px;overflow-wrap:anywhere}
+    .tier-desc{font-size:13px;color:var(--muted);margin:10px 0 21px;min-height:50px}
+    .price{font-size:40px;line-height:1.3;letter-spacing:-1px;font-weight:800;overflow-wrap:anywhere}
+    .currency-note{font-size:11px;color:var(--muted);margin-top:5px}
+    .qar{display:block;font-size:12px;color:var(--muted);margin-top:5px}
+    .tier ul{margin:21px 0 24px;padding:20px 19px 0 0;border-top:1px solid var(--line);font-size:13px}
+    .tier li{padding-inline-start:4px;margin-bottom:10px}
+    .tier li::marker{color:#64813c}
+    .tier-bottom{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+    .pricing-note{font-size:12px;color:var(--muted);margin-top:18px}
+    .purchase-direction{margin-top:24px;padding:22px;background:var(--soft);border:1px solid var(--line);border-radius:17px;text-align:center;font-size:16px;font-weight:700}
+    .purchase-direction small{display:block;margin-top:5px;font-size:12px;font-weight:400;color:var(--muted)}
+    .faq-list{border-top:1px solid var(--line)}
+    details{border-bottom:1px solid var(--line);padding:19px 0}
+    summary{cursor:pointer;font-size:15px;font-weight:700;padding-inline-end:8px}
+    summary::marker{color:#658242}
+    details p{font-size:14px;color:var(--muted);margin-top:13px;max-width:860px;padding-inline-start:20px}
+    .contact{padding:29px 24px;background:white;border:1px solid var(--line);border-radius:var(--radius);display:flex;flex-direction:column;gap:20px}
+    .contact h2{font-size:25px}
+    .contact p{font-size:14px;color:var(--muted);margin-top:7px}
+    .contact a{font-size:14px;font-weight:700;overflow-wrap:anywhere;align-self:flex-start}
+    .footer{padding:28px 0 32px;color:var(--muted);font-size:12px}
+    .footer-brand{color:var(--green);font-weight:700;margin-bottom:11px}
+    .next-step{padding-top:17px;border-top:1px solid var(--line);font-size:13px}
+    @media(min-width:700px){.grid-three{grid-template-columns:repeat(3,1fr);gap:28px}.features{grid-template-columns:repeat(2,1fr)}.solution{padding:40px}.contact{flex-direction:row;justify-content:space-between;align-items:center}.contact a{align-self:center}.section{padding:58px 0}}
+    @media(min-width:980px){.hero{padding:70px 0 54px}.hero-grid{grid-template-columns:1.2fr .8fr;gap:55px}.solution{grid-template-columns:1fr 1fr;gap:65px}.pricing-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tier{padding:28px}.tier.featured{padding:27px}.features{grid-template-columns:repeat(4,1fr)}}
+    @media(max-width:380px){.container{width:calc(100% - 28px)}.top-note{font-size:10px}.brand{font-size:17px}.preview{padding:18px}.price{font-size:34px}}
+    @media(prefers-reduced-motion:no-preference){summary,a{transition:color .15s ease}a:hover{color:#638331}}
+    @media print{body{background:white}.hero,.section{padding:22px 0}.tier,.feature,.preview{box-shadow:none;break-inside:avoid}.solution{background:#eef1eb;color:#18362f}.solution p,.solution .kicker{color:#18362f}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand"><span class="brand-icon" aria-hidden="true">≡</span><span>عرضك واضح</span></div>
+      <span class="top-note">قوالب عربية · لخدمات أكثر وضوحًا</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span>متاح للشراء الآن · لكتّاب المحتوى ومستقلي التسويق</div>
+          <h1 id="hero-title">اكتب عرض خدمة واضحًا.<br><span class="highlight">لا تبدأ من صفحة فارغة.</span></h1>
+          <p class="hero-copy">ابدأ من أمثلة عربية مكتملة لتوضح ما ستقدمه، وما تحتاجه من العميل، ومدة التنفيذ. اختر المثال المناسب، وعدّل حقوله بما يناسب خدمتك الفعلية قبل الإرسال.</p>
+          <div class="buy-note"><span class="arrow" aria-hidden="true">↓</span><span>اختر باقتك ثم ادفع عبر الأزرار في الأسفل</span></div>
+          <p class="micro">قوالب للاستخدام الذاتي، لا ضمان لقبول العرض أو زيادة المبيعات.</p>
+          <div class="tags"><span class="tag">أمثلة مكتملة لا عناوين فقط</span><span class="tag">نطاق عمل محدد</span><span class="tag">محتوى عربي أصلي</span></div>
+        </div>
+        <div class="preview-wrap">
+          <article class="preview" aria-label="مثال توضيحي افتراضي لنطاق خدمة كتابة المحتوى">
+            <div class="preview-top"><span>هكذا يصبح النطاق أوضح</span><span class="sample-label">مثال افتراضي</span></div>
+            <h2>عرض كتابة محتوى شهري</h2>
+            <p class="preview-intro">تصوّر مبسّط لطريقة تحديد الخدمة، وليس عرضًا لتنفيذها لك.</p>
+            <div class="sample-row"><strong>المخرجات</strong><p>كتابة 12 منشورًا شهريًا لمنصة واحدة.</p></div>
+            <div class="sample-row"><strong>مدخلات العميل</strong><p>وصف النشاط، والجمهور المستهدف، والمعلومات المعتمدة عن الخدمات.</p></div>
+            <div class="sample-row"><strong>حدود الخدمة</strong><p>لا تشمل التصميم أو النشر أو إدارة الرسائل.</p></div>
+            <div class="sample-row"><strong>قبل اعتماد العرض</strong><p>حدّد مواعيد التسليم وجولات التعديل وفق قدرتك واتفاقك مع العميل.</p></div>
+            <p class="preview-foot">الأعداد الواردة توضيحية؛ عدّلها لتطابق الخدمة التي تستطيع تقديمها.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-head"><span class="kicker">المشكلة</span><h2 id="problem-title">قد تكون خدمتك جيدة… لكن وصفها يترك أسئلة كثيرة.</h2><p class="section-intro">عندما يبقى العرض عامًا، يصعب على العميل فهم حدود العمل، ويصعب عليك توضيح ما اتفقتما عليه لاحقًا.</p></div>
+        <div class="grid-three">
+          <article class="problem-card"><span class="number">01 / البداية المتكررة</span><h3>تكتب من الصفر كل مرة</h3><p>تعيد ترتيب الفقرات والمخرجات، بدل الانطلاق من مثال مترابط تعدّله على احتياج العميل.</p></article>
+          <article class="problem-card"><span class="number">02 / النطاق الملتبس</span><h3>الكتابة ليست إدارة المحتوى</h3><p>عبارة «خدمات محتوى» لا توضح وحدها هل تشمل الكتابة، أم الجدولة والنشر، أم إدارة الرسائل.</p></article>
+          <article class="problem-card"><span class="number">03 / التفاصيل المؤجلة</span><h3>توقعات لم تُكتب بوضوح</h3><p>مدخلات العميل، والمواعيد، وجولات المراجعة قد تُترك للنقاش بعد بدء العمل بدل توضيحها في العرض.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="solution">
+          <div><span class="kicker">الحل</span><h2 id="solution-title">مثال مكتمل يريك الصورة.<br>وحقول تعدّلها لتصبح خدمتك.</h2><p>«عرضك واضح» حزمة قوالب عربية لمن يخدمون الشركات الصغيرة في قطر والخليج. نقطة بداية عملية لوصف الخدمة، وليست بديلًا عن فهم العميل أو التخطيط للتنفيذ.</p></div>
+          <ol class="steps">
+            <li><span class="step-index" aria-hidden="true">1</span><div><strong>اختر أقرب مثال إلى خدمتك</strong><p>ابدأ بنوع العمل الفعلي: كتابة، أو إدارة محتوى، أو عرض تدريب ضمن الباقات الأوسع.</p></div></li>
+            <li><span class="step-index" aria-hidden="true">2</span><div><strong>عدّل التفاصيل، لا الاسم فقط</strong><p>راجع عدد المخرجات ومدخلات العميل والمدة وحدود النطاق وجولات التعديل.</p></div></li>
+            <li><span class="step-index" aria-hidden="true">3</span><div><strong>طابق الوصف مع قدرتك على التنفيذ</strong><p>استخدم قائمة التحقق، ثم أرسل عرضك بنفسك بعد التأكد من اتساق تفاصيله.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head"><span class="kicker">مزايا المنتج</span><h2 id="features-title">الوضوح في التفاصيل، لا في الزخرفة.</h2></div>
+        <div class="features">
+          <article class="feature"><span class="feature-symbol" aria-hidden="true">≡</span><h3>أمثلة لها سياق</h3><p>نماذج افتراضية مكتملة تُظهر العلاقة بين وصف الخدمة والمخرجات والمدة، بدل تركك أمام عناوين فارغة.</p></article>
+          <article class="feature"><span class="feature-symbol" aria-hidden="true">↔</span><h3>فصل بين الخدمات</h3><p>تمييز واضح بين إنتاج المحتوى وإدارته، مع تحديد ما يشمله كل مثال وما يستبعده.</p></article>
+          <article class="feature"><span class="feature-symbol" aria-hidden="true">✓</span><h3>مراجعة قبل الإرسال</h3><p>جداول ونموذج لتلخيص الاحتياج وقائمة تحقق تساعدك على مراجعة التفاصيل المتفق عليها.</p></article>
+          <article class="feature"><span class="feature-symbol" aria-hidden="true">✎</span><h3>مرونة في التعديل</h3><p>محتوى عربي مكتوب من الصفر، قابل لتكييفه مع خدمتك واستخدام العروض الناتجة مع عملائك.</p></article>
+        </div>
+        <p class="boundary"><strong>حدود المنتج بوضوح:</strong> ملفات للاستخدام الذاتي؛ لا تشمل تخصيصًا للمشتري، أو تنفيذ خدمات تسويقية، أو جلسات تدريب فعلية، أو عقودًا وبنودًا قانونية.</p>
+      </div>
+    </section>
+
+    <section class="section packages" aria-labelledby="packages-title">
+      <div class="container">
+        <div class="section-head"><span class="kicker">الباقات</span><h2 id="packages-title">اختر بحسب تنوّع الخدمات التي تعرضها.</h2><p class="section-intro">ابدأ بما تحتاجه فعلًا. كل باقة مستقلة، ولا يتطلب اختيارها شراء باقة أخرى.</p></div>
+        <div class="pricing-grid">
+          <article class="tier">
+            <span class="tier-label">لخدمة كتابة محددة</span>
+            <h3>عرض واحد</h3>
+            <p class="tier-desc">نقطة بداية مركّزة لمن يقدّم كتابة المحتوى الشهري.</p>
+            <div class="price"><bdi dir="ltr">$9</bdi></div>
+            <p class="currency-note">بالدولار الأمريكي</p>
+            <small class="qar">نحو <bdi>≈ ٣٣ ر.ق تقريباً</bdi> بالريال القطري — معادل تقريبي</small>
+            <ul>
+              <li>مثال افتراضي مكتمل لعرض كتابة 12 منشورًا شهريًا لمنصة واحدة، دون تصميم أو نشر أو إدارة رسائل.</li>
+              <li>نموذج لتلخيص احتياج العميل، وجدول مخرجات ومدة معبّأ مع نسخة فارغة للتعديل.</li>
+              <li>قائمة تحقق لمراجعة العرض قبل إرساله.</li>
+            </ul>
+            <p class="tier-bottom">مناسبة إذا كانت عروضك تتمحور حول كتابة المنشورات.</p>
+          </article>
+          <article class="tier featured">
+            <span class="tier-label">لتنويع عروض الخدمات</span>
+            <h3>حزمة العروض</h3>
+            <p class="tier-desc">أمثلة تغطي الكتابة وإدارة المحتوى وعرض جلسة تدريب.</p>
+            <div class="price"><bdi dir="ltr">$19</bdi></div>
+            <p class="currency-note">بالدولار الأمريكي</p>
+            <small class="qar">نحو <bdi>≈ ٦٩ ر.ق تقريباً</bdi> بالريال القطري — معادل تقريبي</small>
+            <ul>
+              <li>3 أمثلة افتراضية: كتابة 12 منشورًا، وإدارة منصة بنشر 12 مادة جاهزة، وعرض جلسة تدريب تسويقي.</li>
+              <li>نموذج احتياج مع مثال تعبئة لكل خدمة، و3 جداول معبّأة وجدول فارغ.</li>
+              <li>توضيح مدخلات العميل وحدود النطاق وجولات التعديل أو المراجعة.</li>
+              <li>قائمة تحقق وتعليمات مختصرة لتعديل الحقول ومراجعة الاتساق.</li>
+            </ul>
+            <p class="tier-bottom">مثال التدريب قالب لعرض خدمتك؛ لا يتضمن جلسة يحصل عليها المشتري.</p>
+          </article>
+          <article class="tier">
+            <span class="tier-label">لنطاق أوسع من العروض</span>
+            <h3>مكتبة العروض</h3>
+            <p class="tier-desc">تنوع أكبر في الأمثلة مع صياغات بديلة ومسودات مراسلات.</p>
+            <div class="price"><bdi dir="ltr">$29</bdi></div>
+            <p class="currency-note">بالدولار الأمريكي</p>
+            <small class="qar">نحو <bdi>≈ ١٠٦ ر.ق تقريباً</bdi> بالريال القطري — معادل تقريبي</small>
+            <ul>
+              <li>6 أمثلة افتراضية تشمل كتابة المنشورات والمقالات، وإدارة محتوى منصات، وعرض جلسة تدريب وورشة تخطيط محتوى.</li>
+              <li>6 أمثلة لتلخيص الاحتياج، و6 جداول معبّأة وجدول فارغ لإعادة الاستخدام.</li>
+              <li>12 صياغة بديلة للافتتاح والهدف وحدود النطاق وطلب الخطوة التالية.</li>
+              <li>3 مسودات رسائل: إرسال العرض، ومتابعته دون ضغط، وطلب المعلومات الناقصة.</li>
+              <li>قائمة تحقق وتعليمات لتعديل الحقول ومراجعة الاتساق.</li>
+            </ul>
+            <p class="tier-bottom">مناسبة لمن يحتاج تنوعًا أكبر في وصف الخدمات والتواصل حولها.</p>
+          </article>
+        </div>
+        <p class="pricing-note">الأعداد والمدد داخل أمثلة الخدمات توضيحية، وليست خدمات تُنفّذ للمشتري. معادل الريال للتقريب؛ وقد تختلف رسوم التحويل لدى البنك أو مزود الدفع.</p>
+        <div class="purchase-direction">اختر باقتك ثم ادفع عبر الأزرار في الأسفل<small>اختر المثال الذي تحتاجه، لا الباقة الأكبر لمجرد أنها الأكبر.</small></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head"><span class="kicker">الأسئلة الشائعة</span><h2 id="faq-title">قبل أن تختار.</h2></div>
+        <div class="faq-list">
+          <details><summary>لمن تناسب هذه الحزمة؟</summary><p>لكاتب المحتوى أو مستقل التسويق العربي المبتدئ إلى متوسط الخبرة الذي يكرر إعداد عروض خدمات للشركات الصغيرة في قطر والخليج. ليست بديلًا عن فهم احتياج العميل أو تحديد قدرتك الفعلية على التنفيذ.</p></details>
+          <details><summary>هل هي قوالب فارغة أم أمثلة مكتملة؟</summary><p>تضم الباقات أمثلة افتراضية مكتملة وحقول تعديل واضحة، إلى جانب النماذج والجداول الخاصة بكل باقة. جميع الأمثلة موسومة بأنها افتراضية؛ والأعداد والمدد فيها توضيحية وتحتاج مراجعتك قبل إرسال عرضك.</p></details>
+          <details><summary>كيف أختار بين الباقات؟</summary><p>اختر عرض واحد إذا كنت تحتاج مثالًا لكتابة المحتوى الشهري. واختر حزمة العروض إذا أردت 3 أمثلة تغطي الكتابة والإدارة وعرض التدريب. أما مكتبة العروض فتضم 6 أمثلة وصياغات بديلة ومسودات مراسلات. كل باقة مستقلة.</p></details>
+          <details><summary>هل أستطيع تعديل المحتوى؟</summary><p>نعم. تحتوي كل باقة على ملف بصيغة DOCX قابل للتحرير ونسخة PDF مطابقة في المحتوى. استخدم برنامجًا يدعم صيغة DOCX، مع ملاحظة أن بعض تفاصيل التنسيق قد تختلف بين البرامج.</p></details>
+          <details><summary>هل تشمل مراجعة عرضي أو تنفيذ الخدمة أو تدريبًا؟</summary><p>لا. المنتج ملفات للاستخدام الذاتي؛ لا يشمل تخصيصًا أو مراجعة لعرضك أو تنفيذًا لخدمات العملاء. أمثلة التدريب وورشة التخطيط هي قوالب لوصف خدمات قد تقدمها أنت، وليست جلسات أو ورشًا يحصل عليها المشتري.</p></details>
+          <details><summary>هل القوالب عقود، أو تضمن قبول العرض؟</summary><p>لا. هي قوالب تشغيلية لوصف الخدمة، وليست عقودًا أو استشارة قانونية. لا تضمن قبول العرض أو زيادة المبيعات، ووجود الأمثلة لا يُعد دليلًا على طلب السوق للخدمات المذكورة.</p></details>
+          <details><summary>هل يمكن استخدامها مع أكثر من عميل؟</summary><p>نعم، يمكنك تعديلها واستخدام العروض الناتجة في عملك مع عملائك. لا يشمل الشراء حق إعادة بيع ملفات الحزمة أو توزيعها أو نشرها باعتبارها مكتبة قوالب، بصيغتها الأصلية أو بعد تعديلات شكلية.</p></details>
+          <details><summary>ما عملة الأسعار المعروضة؟</summary><p>الأسعار معروضة بالدولار الأمريكي، وإلى جانبها معادل تقريبي بالريال القطري. راجع المبلغ الظاهر في صفحة الدفع قبل التأكيد؛ فقد يطبق البنك أو مزود الدفع رسوم تحويل منفصلة.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div><h2 id="contact-title">للتواصل</h2><p>لديك سؤال عن ملاءمة إحدى الباقات لخدمتك؟ راسلنا قبل اختيارك.</p></div>
+        <a href="mailto:qff.investment@gmail.com" aria-label="راسلنا عبر البريد الإلكتروني qff.investment@gmail.com"><bdi dir="ltr">qff.investment@gmail.com</bdi></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="footer-brand">عرضك واضح — وضوح الخدمة يبدأ من وصفها.</p>
+    <p class="next-step">⚡ خطوتك الرابحة التالية: حدّد اليوم أكثر خدمة تكرر عرضها على العملاء، واختر الباقة التي تتضمن مثالها.</p>
+  </footer>
+<!-- mared:legal:start --><section dir="rtl" lang="ar" style="max-width:760px;margin:32px auto;padding:20px 16px;border-top:1px solid rgba(0,0,0,.12);font-family:system-ui,sans-serif;line-height:1.8">
+<h2 style="font-size:20px">ما ستحصل عليه</h2><p>عرضك واضح — حزمة قوالب عربية لكتّاب المحتوى ومستقلي التسويق الذين يخدمون الشركات الصغيرة في قطر والخليج.
+
+بدل إعادة كتابة وصف الخدمة كل مرة، اختر المثال المناسب، وعدّل الحقول المحددة، وراجع تطابق الوصف مع المخرجات والمدة قبل الإرسال.
+
+تتميّز الحزمة بأمثلة مكتملة، لا عناوين فارغة فقط: تفصل بين كتابة المحتوى وإدارته، وتوضح مدخلات العميل، وعدد المخرجات، وجولات التعديل المقترحة، وما لا يشمله نطاق العمل. جميع الأمثلة افتراضية وموسومة بذلك، ومكتوبة من الصفر دون علامات تجارية للغير.
+
+صيغة التسليم المستهدفة لكل باقة: ملف DOCX قابل للتحرير ونسخة PDF مطابقة في المحتوى. المنتج ملفات للاستخدام الذاتي؛ لا يشمل تنفيذ خدمات تسويقية أو جلسات تدريب أو تخصيصًا للمشتري أو عقودًا وبنودًا قانونية.</p>
+<h3>الأسعار النهائية والباقات</h3><ul><li style="margin:8px 0"><b>عرض واحد</b>: <b>$9</b> <small style="opacity:.75">(≈ ٣٣ ر.ق تقريباً)</small> — <a href="https://paypal.me/MMS71017/9USD" target="_blank" rel="noopener" data-mared-buy="9" style="font-weight:700">اشترِ هذه الباقة</a><br><span style="font-size:13px">تشمل: مثال افتراضي مكتمل لعرض كتابة 12 منشورًا شهريًا لمنصة واحدة، مع استبعاد التصميم والنشر وإدارة الرسائل.، نموذج تلخيص احتياج العميل لخدمة كتابة المحتوى.، جدول مخرجات ومدة معبّأ للمثال، ونسخة فارغة قابلة للتعديل.، قائمة تحقق قبل إرسال العرض.، ملف DOCX قابل للتحرير ونسخة PDF مطابقة في المحتوى؛ لا يشمل تخصيصًا أو تنفيذ الخدمة.</span></li><li style="margin:8px 0"><b>حزمة العروض</b>: <b>$19</b> <small style="opacity:.75">(≈ ٦٩ ر.ق تقريباً)</small> — <a href="https://paypal.me/MMS71017/19USD" target="_blank" rel="noopener" data-mared-buy="19" style="font-weight:700">اشترِ هذه الباقة</a><br><span style="font-size:13px">تشمل: مثال افتراضي مكتمل لعرض كتابة 12 منشورًا شهريًا لمنصة واحدة، دون تصميم أو نشر.، مثال افتراضي مكتمل لعرض إدارة محتوى منصة واحدة: جدولة ونشر 12 مادة جاهزة يقدّمها العميل وتقرير شهري وصفي، دون كتابة المواد أو إدارة الرسائل أو الإعلانات.، مثال افتراضي مكتمل لعرض جلسة تدريب تسويقي عن بُعد مدتها 90 دقيقة، حتى 6 مشاركين، مع ورقة تطبيق؛ وهو قالب عرض وليس جلسة تدريب يحصل عليها المشتري.، نموذج موحّد لتلخيص احتياج العميل، مع مثال تعبئة لكل خدمة.، 3 جداول معبّأة للمخرجات والمدة، وجدول فارغ قابل لإعادة الاستخدام.، توضيح مدخلات العميل، وحدود النطاق، وجولات التعديل أو المراجعة المناسبة لكل مثال.، قائمة تحقق قبل الإرسال، وتعليمات مختصرة لتعديل الحقول ومراجعة الاتساق.، ملف DOCX قابل للتحرير ونسخة PDF مطابقة في المحتوى؛ لا يشمل تخصيصًا أو تنفيذ الخدمات.</span></li><li style="margin:8px 0"><b>مكتبة العروض</b>: <b>$29</b> <small style="opacity:.75">(≈ ١٠٦ ر.ق تقريباً)</small> — <a href="https://paypal.me/MMS71017/29USD" target="_blank" rel="noopener" data-mared-buy="29" style="font-weight:700">اشترِ هذه الباقة</a><br><span style="font-size:13px">تشمل: 6 أمثلة افتراضية مكتملة: كتابة 12 منشورًا شهريًا، وكتابة 4 مقالات تعريفية، وإدارة منصة بنشر 12 مادة جاهزة، وإدارة محتوى لينكدإن بنشر 8 مواد جاهزة، وعرض جلسة تدريب 90 دقيقة، وعرض ورشة تخطيط محتوى 120 دقيقة.، لكل مثال: وصف الخدمة، والمخرجات المحددة، ومدخلات العميل، والمدة، والمراجعات المناسبة، وما لا يشمله العرض.، نموذج تلخيص احتياج العميل، مع 6 أمثلة تعبئة مرتبطة بالعروض.، 6 جداول معبّأة للمخرجات والمدة، وجدول فارغ قابل لإعادة الاستخدام.، 12 صياغة بديلة قابلة للتعديل: 3 لافتتاح العرض، و3 لوصف الهدف، و3 لتوضيح حدود النطاق، و3 لطلب الخطوة التالية.، 3 مسودات رسائل: إرسال العرض، ومتابعته دون ضغط، وطلب المعلومات الناقصة؛ يرسلها المشتري بنفسه.، قائمة تحقق قبل الإرسال، وتعليمات مختصرة لتعديل الحقول ومراجعة الاتساق.، ملف DOCX قابل للتحرير ونسخة PDF مطابقة في المحتوى؛ لا يشمل تخصيصًا أو تنفيذ الخدمات أو تقديم التدريب.</span></li></ul><p style="font-size:13px">السعر النهائي بالدولار الأمريكي ويُدفع عبر PayPal بلا رسوم إضافية من البائع. المبلغ بالريال تقريبي للإيضاح فقط، وقد يطبّق PayPal أو بنكك رسوم تحويل عملة.</p>
+<h3>طريقة التسليم</h3><p>بعد تأكيد الدفع عبر PayPal يصلك المنتج (ملف رقمي) على بريدك المسجّل في PayPal خلال ٢٤ ساعة كحد أقصى.</p><p dir="ltr" lang="en" style="font-size:13px">Digital file delivered to your PayPal email within 24 hours of payment confirmation.</p>
+<h3>سياسة الاسترداد</h3><p>إذا لم يصلك الملف خلال ٢٤ ساعة من تأكيد الدفع، أو وصلك تالفًا أو غير مطابق لوصف الباقة، تواصل معنا خلال ٧ أيام لاستبداله أو استرداد المبلغ كاملًا عبر PayPal. مهلة الأيام السبعة لا تُسقط حقوقك القانونية عند وجود عيب أو عدم مطابقة، ولا نفرض الاستبدال بدل الاسترداد متى كان الاسترداد حقًا لك، وإذا منحك قانون بلدك حقوقًا أوسع (مثل حق العدول) فهي محفوظة.</p>
+<h3>البائع والتواصل</h3><p>البائع: سويراس — سجل تجاري قطري رقم 257327 — العنوان: قطر — للتواصل: <a href="mailto:qff.investment@gmail.com">qff.investment@gmail.com</a></p>
+<p><a href="terms.html">شروط البيع</a> · <a href="privacy.html">سياسة الخصوصية</a></p>
+</section><!-- mared:legal:end --><!-- mared:payouts:start --><section dir="rtl" style="text-align:center;padding:32px 16px;margin-top:32px;border-top:1px solid rgba(0,0,0,.08)"><p style="margin:0 0 12px;font-family:system-ui,sans-serif;font-weight:700">ادعم / اشترِ الآن</p><a href="https://paypal.me/MMS71017" target="_blank" rel="noopener" data-mared-payout="paypal" style="display:inline-block;margin:6px;padding:12px 22px;border-radius:12px;background:#e8b44a;color:#1a1408;font-weight:700;text-decoration:none;font-family:system-ui,sans-serif">ادفع عبر PayPal</a></section><!-- mared:payouts:end --></body>
+</html>
