@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qffinvestmentai-crypto.github.io/clear-service-proposals/sitemap.xml
